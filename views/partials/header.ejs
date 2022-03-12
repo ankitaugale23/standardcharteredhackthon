@@ -15,10 +15,6 @@
                 </div>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    
-                    <li><a href="#">Sign Up </a>
-                    </li>
-                    <li><a href="#">Login</a></li>
                     <li><a href="#">Learn</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">Support</a></li>
@@ -31,7 +27,28 @@
                         </div>
                     </li>
                 </ul>
-
+                <ul class="navbar-nav ml-auto">
+                    <% if(!currentUser) { %>
+                      <li id="login" class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                      </li>
+                      <li id="register" class="nav-item">
+                        <a class="nav-link" href="/register">Sign Up</a>
+                      </li>
+                    <% } else { %>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="fas fa-user"></i>
+                          <%= currentUser.username %>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/users/<%= currentUser._id %>">Profile</a>
+                          <a class="dropdown-item" href="/logout">Log Out</a>
+                        </div>
+                      </li>
+                    <% } %>
+                  </ul>
             </div>
             
         </header>

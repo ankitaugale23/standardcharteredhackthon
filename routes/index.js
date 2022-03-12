@@ -31,10 +31,13 @@ cloudinary.config({
 // root route
 router.get("/", function(req, res) {
   if (req.user) {
-    return res.redirect("/landing");
+    return res.redirect("/home");
   } else {
-    res.render("landing");
+    res.render("home");
   }
+});
+router.get("/home", function(req, res) {
+  res.render("home");
 });
 
 router.get("/about", function(req, res) {
@@ -44,7 +47,7 @@ router.get("/about", function(req, res) {
 // show register form
 router.get("/register", function(req, res) {
   if (req.user) {
-    return res.redirect("/landing");
+    return res.redirect("/home");
   } else {
     res.render("register");
   }
@@ -68,7 +71,7 @@ router.post("/register", upload.single("image"), function(req, res) {
         });
       }
       passport.authenticate("local")(req, res, function() {
-        res.redirect("/landing");
+        res.redirect("/home");
       });
     });
   } else {
@@ -101,7 +104,7 @@ router.post("/register", upload.single("image"), function(req, res) {
             });
           }
           passport.authenticate("local")(req, res, function() {
-            res.redirect("/landing");
+            res.redirect("/home");
           });
         });
       }, {
@@ -114,7 +117,7 @@ router.post("/register", upload.single("image"), function(req, res) {
 // show login form
 router.get("/login", function(req, res) {
   if (req.user) {
-    return res.redirect("/landing");
+    return res.redirect("/home");
   } else {
     res.render("login");
   }
@@ -124,7 +127,7 @@ router.get("/login", function(req, res) {
 router.post(
   "/login",
   passport.authenticate("local", {
-    successRedirect: "/landing",
+    successRedirect: "/home",
     failureRedirect: "/login",
     failureFlash: true
   }),
@@ -144,29 +147,10 @@ router.get("/users/:user_id", function(req, res) {
       req.flash("error", "This user doesn't exist");
       return res.render("error");
     }
-    Wanderworld .find()
-      .where("author.id")
-      .equals(foundUser._id)
-      .exec(function(err, wanderworlds) {
-        if (err) {
-          req.flash("error", "Something went wrong");
-          res.render("error");
-        }
-        Comment.find()
-          .where("author.id")
-          .equals(foundUser._id)
-          .exec(function(err, ratedCount) {
-            if (err) {
-              req.flash("error", "Something went wrong");
-              res.render("error");
-            }
+  
             res.render("showprofile", {
-              user: foundUser,
-              wanderworlds: wanderworlds,
-              reviews: ratedCount
+              user: foundUser
             });
-          });
-      });
   });
 });
 
