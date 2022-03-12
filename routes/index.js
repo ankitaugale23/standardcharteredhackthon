@@ -223,9 +223,9 @@ router.put(
 
 router.get("/test", function(req, res) {
   if (req.user) {
-    return res.redirect("/learnings");
+    return res.redirect("/home");
   } else {
-    res.render("learnings");
+    res.render("home");
   }
 });
 
