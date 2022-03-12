@@ -221,6 +221,14 @@ router.put(
   }
 );
 
+router.get("/test", function(req, res) {
+  if (req.user) {
+    return res.redirect("/learnings");
+  } else {
+    res.render("learnings");
+  }
+});
+
 // delete user
 router.delete("/users/:user_id", middleware.checkProfileOwnership, function(
   req,
