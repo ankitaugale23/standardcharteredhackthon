@@ -10,6 +10,9 @@ var express = require("express"),
   //MONGODB_URI=,
   flash = require("connect-flash");
 
+  // Requiring routes
+  var indexRoutes = require("./routes/index");
+
   mongoose.Promise = global.Promise;
 
   const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/GBShackathon';
@@ -45,6 +48,11 @@ app.use(function(req, res, next) {
   res.locals.error = req.flash("error");
   res.locals.success = req.flash("success");
   next();
+});
+
+app.use("/", indexRoutes);
+app.get("*", function(req, res) {
+  res.render("error");
 });
 
 app.listen(process.env.PORT || 3000, function() {
