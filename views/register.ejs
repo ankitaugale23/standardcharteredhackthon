@@ -1,5 +1,5 @@
-<% include('./partials/header'); %>
-<% include('./partials/errorMsg'); %>
+<%- include('./partials/header'); -%>
+<%- include('./partials/errorMsg'); -%>
 
   <div class="container mt-5">
     <div class="row">
@@ -17,12 +17,6 @@
                 <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Full Name" required>
                 <div class="invalid-feedback">
                   Please enter your name.
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="custom-file">
-                  <input type="file" name="image" accept="image/*" class="custom-file-input" id="image" aria-describedby="inputGroupFileAddon01">
-                  <label class="custom-file-label" for="inputGroupFile01">Profile Pic</label>
                 </div>
               </div>
               <div class="form-group">
@@ -60,4 +54,3 @@
     </div>
   </div>
 
-  <% include('./partials/footer'); %>

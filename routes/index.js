@@ -160,7 +160,7 @@ router.get("/users/:user_id", function(req, res) {
               req.flash("error", "Something went wrong");
               res.render("error");
             }
-            res.render("users/show", {
+            res.render("showprofile", {
               user: foundUser,
               wanderworlds: wanderworlds,
               reviews: ratedCount
@@ -176,7 +176,7 @@ router.get(
   middleware.isLoggedIn,
   middleware.checkProfileOwnership,
   function(req, res) {
-    res.render("users/edit", {
+    res.render("editprofile", {
       user: req.user
     });
   }
