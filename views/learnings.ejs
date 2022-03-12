@@ -1,91 +1,165 @@
-<%- include('./partials/header'); -%>
-<%- include('./partials/errorMsg'); -%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cards</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="/stylesheets/learning.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cards</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="learning.css">
 </head>
-<body class="bg-light">
-	<div class="content">
-  <h1 class="heading bg-light">Learnings</h1>
-  <a class="card" href="/Agriculture.ejs">
-    <div class="front" style="background-image: url('images/agri final.jpg')">
-      <p>Agriculture</p>
-    </div>
-    <div class="back">
-      <div>
-        <u><p>Cultivating <br> Ideas <br> for <br> growth</p></u>
-        <button class="button">Learn More</button>
+
+<body class="bg-light antra">
+  <div class="content">
+    <h1 class="bg-light">Learnings</h1>
+    
+    <div class="card">
+      <div class="front" style="background-image: url('images/agri final.jpg')">
+        <p>Agriculture</p>
       </div>
-    </div></a><a class="card" href="/Handicraft&Jwellery.ejs">
-    <div class="front" style="background-image: url('images/jwellery.jpg')">
-      <p>Handicraft & Jwelerry</p>
-    </div>
-    <div class="back">
-      <div>
-        <u><p>Crafting <br> Your <br> Curiosity</p></u>
-        <button class="button">Learn More</button>
+      <div class="back">
+        <div class="container">
+          <div>
+            <u>
+              <h5>Cultivating Ideas for growth</h5>
+            </u>
+            <hr>
+          <p> <strong>Training</strong> </p>
+          <span>Duration :- 6 - 8 months</span>
+          <a href="https://kvk.icar.gov.in/">SCHEME</a>
+          <button class="button">Learn More</button>
+          </div>
+        </div> 
       </div>
-    </div></a><a class="card" href="/herbalbeautyproducts.ejs">
-    <div class="front" style="background-image: url('images/herbal.webp')">
-      <p>Herbal <br> Beauty <br> Products</p>
     </div>
-    <div class="back">
-      <div>
-        <u><p>Heart <br> Of <br> Perfect <br>Health</p></u>
-        <button class="button">Learn More</button>
+
+    <div class="card">
+      <div class="front" style="background-image: url('images/jwellery.jpg')">
+        <p>Handicraft & Jewelry</p>
       </div>
-    </div></a><a class="card" href="/Homemadefoodproducts.ejs">
-    <div class="front" style="background-image: url('images/food.jpg')">
-      <p>Home <br> Made <br> Food <br> Products</p>
+      <div class="back">
+        <div class="container">
+          <div>
+            <u>
+              <h5> Crafting Your Curiosity</h5>
+            </u>
+            <hr>
+          <p> <strong>Training</strong> </p>
+          <p>Duration :- 2 - 4 months</p>
+          <a href="http://www.handicrafts.nic.in/schemes.aspx">SCHEME</a>
+          <button class="button">Learn More</button>
+          </div>
+        </div> 
+      
+      </div>
     </div>
-    <div class="back">
-      <div>
-        <u><p>The taste <br> that rhymes <br> with your <br> cravings <br> and <br> health</p></u>
-        <button class="button">Learn More</button>
+
+    <div class="card">
+      <div class="front" style="background-image: url('images/herbal.webp')">
+        <p>Herbal Beauty Products</p>
       </div>
-    </div></a><a class="card" href="/Clothes.ejs">
-    <div class="front" style="background-image: url('images/clothes final.jpeg')">
-      <p>Clothes</p>
+      <div class="back">
+        <div class="container">
+          <div>
+            <u>
+              <h5>Heart Of PerfectHealth</h5>
+            </u>
+            <hr>
+          <p> <strong>Training</strong> </p>
+          <p>Duration :- 2 - 4 months</p>
+          <a href="https://rmherbals.in/entrepreneur-development-program-herbal-beauty-care-products">SCHEME</a>
+          <button class="button">Learn More</button>
+          </div>
+        </div> 
+      
+      </div>
     </div>
-    <div class="back">
-      <div>
-        <u><p>Divided <br> by <br> regions, <br> United <br> by <br> fashion</p></u>
-        <button class="button">Learn More</button>
+
+    <div class="card">
+      <div class="front" style="background-image: url('images/food.jpg')">
+        <p>Home Made Food Products</p>
       </div>
-    </div></a><a class="card" href="/Basiccomputerknowledge.ejs">
-    <div class="front" style="background-image: url('images/computer.jpg')">
-      <p>Basic <br> Computer <br> Knowledge</p>
+      <div class="back">
+        <div class="container">
+          <div>
+            <u>
+              <h5>The taste that rhymes with your cravings and health</h5>
+            </u>
+            <hr>
+          <p> <strong>Training</strong> </p>
+          <p>Duration :- 1 - 2 months</p>
+          <a href="https://www.pfionline.com/government-subsidy-for-small-food-business-in-india/">SCHEME</a>
+
+          <button class="button">Learn More</button>
+          </div>
+        </div> 
+      
+      </div>
     </div>
-    <div class="back">
-      <div>
-        <u><p>The <br> power <br> to <br> be <br> your <br> Best</p></u>
-        <button class="button">Learn More</button>
+
+    <div class="card">
+      <div class="front" style="background-image: url('images/clothes final.jpeg')">
+        <p>Regional Clothes</p>
       </div>
-    </div></a>
-</div>
-<div class="welcome-text">
-  <h1>&emsp;RAISE YOUR FUNDS</h1>
-  <hr>
-  <h3 color: "#FFDAB9">&nbsp;&nbsp;1. Angel Investor</h3>
-  <p>Individuals with surplus cash are known to be Angel investors and these individuals are interested in investing in new start-ups in India.India’s popular Angel investors include Mumbai Angels, Indian Angel Network, and Hyderabad Angels. Start-up owners can directly get in touch with these investors for funding support. <a href="/angelholders.ejs">Learn More</a></p>
- <hr>
- <h3 color: "#FFDAB9">&nbsp;&nbsp;2. Crowdfunding Support</h3>
-  <p>Crowdfunding is a concept of collecting funds from multiple investors via social networking sites and web-based platforms for majorly business purposes. This concept or idea helps in raising funds for start-ups or first-time business owners and also promotes social and cultural causes.<a href="/Crowdfund.ejs">Learn More</a></p>
-  <hr>
-  <h3 color: "#FFDAB9">&nbsp;&nbsp;3. Loans under Government schemes</h3>
-   <p>The government of India has launched various loan schemes that aim to benefits Start-up enterprises, SMEs, MSMEs, as well as promotes the socio-economic growth of rural India, women entrepreneurs,Small Scale Industries (SSIs), villages, people living in rural and urban areas, etc. Loan schemes initiated by the Government of India to help Start-up enterprises.<a href="/Loangovt.ejs">Learn More</a></p> 
-   <hr>
-  <h3 color: "#FFDAB9">&nbsp;&nbsp;4.Small business loans from NBFCs, MFIs</h3>
-  <p>By contacting Non-banking Financial Companies (NBFCs) and Micro Finance Institutions (MFIs) you shall get business loans for your Start-up based on your requirements without having a credit score or financial history. The interest rates offered by NBFCS and MFIs are comparatively higher, as compared to PSU banks<a href="smallBusinessloans.ejs">Learn More</a></p> 
+      <div class="back">
+        <div class="container">
+          <div>
+            <u>
+              <h5>Divided by regions, United by fashion</h5>
+            </u>
+            <hr>
+          <p> <strong>Training</strong> </p>
+          <p>Duration :- 2 - 3 months</p>
+          <a href="http://texmin.nic.in/schemes">SCHEME</a>
+          <button class="button">Learn More</button>
+          </div>
+        </div> 
+      
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="front" style="background-image: url('images/computer.jpg')">
+        <p>Basic Computer Knowledge</p>
+      </div>
+      <div class="back">
+        <div class="container">
+          <div>
+            <u>
+              <h5>The power to be your Best</h5>
+            </u>
+            <hr>
+          <p> <strong>Training</strong> </p>
+          <p>Duration :- 3 - 4 months</p>
+          <a href="https://www.nielit.gov.in/delhi/content/it-masses-scheme-women">SCHEME</a>
+          <button class="button">Learn More</button>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <h1 class="heading bg-light">RAISE FOR FUNDS</h1>
+      <a class="card1" href="/angelholders.ejs">
+        <div class="front" style="background-image: url('images/angel.jpg')">
+          <p>Angel Investor</p>
+        </div>
+      </a>
+      <a class="card1" href="/Crowdfund.ejs">
+        <div class="front" style="background-image: url('images/crowd.jpg')">
+          <p>Crowdfunding Support</p>
+        </div>
+      </a>
+      <a class="card1" href="/Loangovt.ejs">
+        <div class="front" style="background-image: url('images/loan.jpg')">
+          <p>Loans under Government schemes</p>
+        </div>
+      </a>
+      <a class="card1" href="/smallBusinessloans.ejs">
+        <div class="front" style="background-image: url('images/smbloan.jpg')">
+          <p>Small business loans from NBFCs, MFIs</p>
+        </div>
+      </a>
 
   </div>
-<br><br>
 </body>
+
 </html>
-<%- include('./partials/footer'); -%>
