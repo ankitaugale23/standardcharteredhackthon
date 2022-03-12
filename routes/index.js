@@ -123,6 +123,14 @@ router.get("/login", function(req, res) {
   }
 });
 
+router.get("/learnings", function(req, res) {
+  if (req.user) {
+    return res.render("learnings");
+  } else {
+    res.render("login");
+  }
+});
+
 // handle login logic
 router.post(
   "/login",
