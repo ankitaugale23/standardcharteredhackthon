@@ -3,9 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/stylesheets/mystyle.css">
         
         <title>Welcome to</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+              crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+         
+        <link rel="stylesheet" href="/stylesheets/mystyle.css">
     </head>
     <body>
         <header>
@@ -18,25 +26,18 @@
                     <li><a href="/learnings">Learn</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">Support</a></li>
-                    <li><a class="fas fa-caret-down">About Us</a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li><a href="#vision"> Vision & Mission </a></li>
-                                <li><a href="h2.html"> Achievemts </a></li>
-                            </ul>
-                        </div>
-                    </li>
+                    <li><a href="#vision">Vision & Mission</a></li>
                 </ul>
-                <ul class="navbar-nav ml-auto">
+                <ul>
                     <% if(!currentUser) { %>
-                      <li id="login" class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
+                      <li id="login">
+                        <a href="/login">Login</a>
                       </li>
                       <li id="register" class="nav-item">
-                        <a class="nav-link" href="/register">Sign Up</a>
+                        <a href="/register">Sign Up</a>
                       </li>
                     <% } else { %>
-                      <li class="nav-item dropdown">
+                      <li>
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                           aria-expanded="false">
                           <i class="fas fa-user"></i>
@@ -49,6 +50,7 @@
                       </li>
                     <% } %>
                   </ul>
+
             </div>
             
         </header>
