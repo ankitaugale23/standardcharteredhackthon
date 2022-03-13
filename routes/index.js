@@ -305,7 +305,7 @@ router.put(
   }
 );
 
-router.get("/test", function(req, res) {
+router.get("/home", function(req, res) {
   if (req.user) {
     return res.redirect("/home");
   } else {
