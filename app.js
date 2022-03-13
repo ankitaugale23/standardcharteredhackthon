@@ -15,7 +15,7 @@ var express = require("express"),
 
   mongoose.Promise = global.Promise;
 
-  const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost/GBShackathon';
+  const databaseUri = 'mongodb+srv://ankitaugale23:pune1234@userprofileinfo.w2zsi.mongodb.net/GBShackathon?retryWrites=true&w=majority' || 'mongodb://localhost/GBShackathon';
   
   mongoose.connect(databaseUri, { useUnifiedTopology: true,  useNewUrlParser: true})
         .then(() => console.log(`Database connected`))
