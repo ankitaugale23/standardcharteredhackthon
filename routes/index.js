@@ -131,6 +131,88 @@ router.get("/learnings", function(req, res) {
   }
 });
 
+router.get("/agriculture", function(req, res) {
+  if (req.user) {
+    return res.render("agriculture");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/handcraftandjwellery", function(req, res) {
+  if (req.user) {
+    return res.render("handcraftandjwellery");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/herbalbeautyproducts", function(req, res) {
+  if (req.user) {
+    return res.render("herbalbeautyproducts");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/homemadefoodproducts", function(req, res) {
+  if (req.user) {
+    return res.render("homemadefoodproducts");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/clothes", function(req, res) {
+  if (req.user) {
+    return res.render("clothes");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/basiccomputerknowledge", function(req, res) {
+  if (req.user) {
+    return res.render("basiccomputerknowledge");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/angelholders", function(req, res) {
+  if (req.user) {
+    return res.render("angelholders");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/crowdfund", function(req, res) {
+  if (req.user) {
+    return res.render("crowdfund");
+  } else {
+    res.render("login");
+  }
+});
+
+router.get("/loangovt", function(req, res) {
+  if (req.user) {
+    return res.render("loangovt");
+  } else {
+    res.render("login");
+  }
+
+});
+
+router.get("/smallbusinessloans", function(req, res) {
+  if (req.user) {
+    return res.render("smallbusinessloans");
+  } else {
+    res.render("login");
+  }
+
+});
+
 // handle login logic
 router.post(
   "/login",
