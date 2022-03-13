@@ -139,9 +139,9 @@ router.get("/agriculture", function(req, res) {
   }
 });
 
-router.get("/handcraftandjwellery", function(req, res) {
+router.get("/handcraftsandjwellery", function(req, res) {
   if (req.user) {
-    return res.render("handcraftandjwellery");
+    return res.render("handcraftsandjwellery");
   } else {
     res.render("login");
   }
