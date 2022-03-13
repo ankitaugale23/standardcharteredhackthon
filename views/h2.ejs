@@ -1,0 +1,62 @@
+<%- include('./partials/header'); -%>
+<%- include('./partials/errorMsg'); -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="stylesheets/mystyle.css">
+</head>
+
+<body>
+                
+                       
+            <header>
+            <h1 style="background-color:rgb(18, 4, 80); width:100%;text-align:center;color:White" >Our Achivements</h1>
+            </header>
+            <div class="slideshow-container">
+
+
+                        <div class="mySlides fade">
+                    <img src="/images/ru31.jpg" style="width:1000px;height: 600px; margin-top:30px">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="/images/ru2.jpg" style="width:1000px;height: 600px; margin-top:30px">
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+
+                        </div>
+                    </div>
+                    <script>
+                    
+                        
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>              
+</body>
+</html>
+<%- include('./partials/footer'); -%>

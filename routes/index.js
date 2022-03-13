@@ -213,6 +213,16 @@ router.get("/smallbusinessloans", function(req, res) {
 
 });
 
+
+router.get("/achievements", function(req, res) {
+  if (req.user) {
+    return res.render("h2");
+  } else {
+    res.render("login");
+  }
+
+});
+
 // handle login logic
 router.post(
   "/login",
