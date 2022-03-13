@@ -8,6 +8,8 @@ Women around the world faces lack of access to knowledge and capital for startin
  * Profile Page with information about user.
  * Menu Page 
  * Learnings page for user to learn various things.
+ * Crowdfunding page to help organisations in gathering fund for helping women.
+ * Vision and Mission pages.
  
  ## Teach Used:
  * HTML, CSS, Javascript,Bootstrap for frontend part.
