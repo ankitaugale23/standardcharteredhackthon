@@ -19,6 +19,15 @@ body {
   background-attachment: fixed;
 }
 
+.agri {
+ margin-left: 15%;
+}
+.computer {
+  margin-left: 15%;
+}
+.clothes {
+  margin-left: 20%;
+}
 .content {
   display: flex;
   margin: 0 auto;

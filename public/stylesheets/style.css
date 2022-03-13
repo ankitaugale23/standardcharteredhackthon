@@ -34,13 +34,18 @@ h3 {
 	margin: auto;
 }
 
+html,body {
+    position:relative; 
+    margin:0;
+    padding:0;
+    overflow:auto; 
+}
+
 .footer {
-	position: absolute;
-	width: 100%;
-    margin-top: auto;
+	position: relative;
+    width: 100%;
     bottom: 0;
-	height: 250px;
-    
+ 
   background-image: radial-gradient(#9c10ff 5.66%, #06fffb 94.35%);
 
   background-image: linear-gradient(45.34deg, #1a9be6 5.66%, #1a57e6 94.35%);
