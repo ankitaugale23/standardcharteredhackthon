@@ -11,16 +11,19 @@ Women around the world faces lack of access to knowledge and capital for startin
  * Crowdfunding page to help organisations in gathering fund for helping women.
  * Vision and Mission pages.
  
- ## Teach Used:
+ ## Technology Used:
  * HTML, CSS, Javascript,Bootstrap for frontend part.
  * Nodejs for backend part.
  * MongoDB for database part.
  * Passport.js local strategy for Authentication part.
 
 ## System Working:
-* So This platform is build for campaign management for women where when user register for the very first time, their data gets saved in database using which user can login in future and can have access to it from profile section.
+* This platform is build for campaign management for women where when user register for the very first time, their data gets saved in database using which user can login in future and can have access to it from profile section.
 * Whole site have various pages with some pages like learning for authenticated users only.
-* Interactive and Beautiful pages are there in website.
+* User friendly,interactive and beautiful pages are there in website.
+
+## Website Hosted on heroku:
+https://stormy-woodland-54981.herokuapp.com/
 
 ## Run it locally
 1. Install [mongodb](https://www.mongodb.com/)
@@ -29,7 +32,7 @@ Women around the world faces lack of access to knowledge and capital for startin
 ```
 > git https://github.com/ankitaugale23/standardcharteredhackthon.git
 > cd standardcharteredhackthon
-npm install
+> npm install
 ```
 
 Run ```mongod``` in one terminal, ```mongo``` in another terminal and ```node app.js``` in the terminal with the project.  
