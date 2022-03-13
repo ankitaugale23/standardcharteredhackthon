@@ -22,3 +22,16 @@ Women around the world faces lack of access to knowledge and capital for startin
 * Whole site have various pages with some pages like learning for authenticated users only.
 * Interactive and Beautiful pages are there in website.
 
+## Run it locally
+1. Install [mongodb](https://www.mongodb.com/)
+2. Install NodeJS.
+
+```
+> git https://github.com/ankitaugale23/standardcharteredhackthon.git
+> cd standardcharteredhackthon
+npm install
+```
+
+Run ```mongod``` in one terminal, ```mongo``` in another terminal and ```node app.js``` in the terminal with the project.  
+
+Then go to [localhost:3000](http://localhost:3000/).
